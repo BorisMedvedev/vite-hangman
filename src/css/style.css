@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "Akzidenz";
+    font-weight: 400;
+    font-style: normal;
+    src: url("/fonts/AkzidenzGroteskPro-Regular.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Akzidenz";
+    font-weight: 500;
+    font-style: normal;
+    src: url("/fonts/AkzidenzGroteskPro-Md.woff") format("woff");
+  }
+  @font-face {
+    font-family: "Akzidenz";
+    font-weight: 700;
+    font-style: normal;
+    src: url("/fonts/AkzidenzGroteskPro-BoldEx.woff") format("woff");
+  }
+
+  html {
+    font-family: Akzidenz, sans-serif;
+  }
+}
+
+@layer components {
+  .app {
+    @apply h-screen flex flex-col justify-center items-center dark:text-white dark:bg-zinc-800;
+  }
+  .logo {
+    @apply text-2xl sm:text-4xl md:text-5xl font-bold;
+  }
+
+  .game {
+    @apply mt-10 flex justify-center;
+  }
+
+  .start-btn {
+    @apply font-bold bg-blue-400 text-zinc-800 dark:text-white px-10 py-2 rounded-md hover:bg-blue-300 ease-in;
+  }
+
+  .dark-checked {
+    @apply w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600;
+  }
+}
