@@ -43,5 +43,12 @@
     @apply font-bold bg-blue-400 text-zinc-800 dark:text-white px-10 py-2 rounded-md hover:bg-blue-300 ease-in;
   }
 
+  .wrapper {
+    @apply flex text-3xl flex-row mx-2;
+  }
+  .letter {
+    @apply  text-5xl mx-2;
+  }
+
 
 }
