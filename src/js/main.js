@@ -22,7 +22,7 @@ toggleDarkMode.addEventListener('input', () => {
 const generateWords = () => {
   const words = ['природа', 'автомобиль', 'солнце',
     'дом', 'кошка', 'книга', 'яблоко', 'стул', 'компьютер', 'музыка'];
-  for (let i = 0; i < 10; i++) {
+  for (let i = 0; i < words.length; i++) {
     const randomIndex = Math.floor(Math.random() * words.length);
     return words[randomIndex];
   }
