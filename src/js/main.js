@@ -7,8 +7,6 @@ const init = () => {
   const startGameBtn = document.getElementById('startGame');
 
   startGameBtn.addEventListener('click', startGame);
-
-
   toggleDarkMode();
 };
 
