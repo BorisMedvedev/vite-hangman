@@ -51,6 +51,10 @@
   }
 }
 
+body {
+  font-family: "Akzidenz", sans-serif;
+}
+
 .app {
   padding: 15px;
 }
@@ -81,16 +85,23 @@
   background-color: #60a5fa;
   border-radius: 4px;
   transition: background 0.5s;
+  font-family: Akzidenz, sans-serif;
 }
 .cancel-btn {
-  margin-top: 30px;
-  padding: 10px 25px;
+  display: inline-block;
+  max-width: 200px;
+  text-align: center;
+  margin: 30px auto;
+  padding: 5px 25px;
   background-color: #60a5fa;
   border-radius: 4px;
   transition: background 0.5s;
+  font-family: Akzidenz, sans-serif;
+  font-weight: 700;
 }
 
-.btn-keyboard:hover, .cancel-btn:hover {
+.btn-keyboard:hover,
+.cancel-btn:hover {
   background-color: #065ec9;
 }
 
@@ -115,6 +126,12 @@
 
 .logo-min {
   font-size: 18px;
+}
+
+.stop-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
 }
 
 @media (max-width: 440px) {

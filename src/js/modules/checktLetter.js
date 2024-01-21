@@ -19,11 +19,11 @@ export const checktLetter = (letter) => {
         letterCount++;
         if (letterCount === world.length) {
           stopGame('win');
+          return;
         }
         document.getElementById(`letter_${i}`)
             .textContent = inputLetter.toUpperCase();
       }
     });
   }
-  console.log(letterCount);
 };
