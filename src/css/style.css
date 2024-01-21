@@ -36,7 +36,7 @@
   }
 
   .game {
-    @apply mt-10 flex justify-center;
+    @apply mt-10 flex justify-center flex-col;
   }
 
   .start-btn {
@@ -44,11 +44,89 @@
   }
 
   .wrapper {
-    @apply flex text-3xl flex-row mx-2;
+    @apply flex text-3xl flex-row mx-2 my-20 justify-between;
   }
   .letter {
-    @apply  text-5xl mx-2;
+    @apply text-4xl mx-2;
+  }
+}
+
+.app {
+  padding: 15px;
+}
+
+.wrapper {
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  max-width: 650px;
+  border: 1px solid #60a5fa;
+  border-radius: 4px;
+}
+
+.keyboard-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  max-width: 650px;
+  flex-wrap: wrap;
+}
+
+.btn-keyboard {
+  width: 40px;
+  height: 40px;
+  background-color: #60a5fa;
+  border-radius: 4px;
+  transition: background 0.5s;
+}
+
+.btn-keyboard:hover {
+  background-color: #065ec9;
+}
+
+.btn-keyboard.disable {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
+.lives-text {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: rgb(255, 0, 0);
+}
+
+.hagman-image {
+  margin: 0 auto;
+  margin-bottom: 25px;
+  max-width: 150px;
+}
+
+.logo-min {
+  font-size: 18px;
+}
+
+@media (max-width: 440px) {
+  .logo {
+    font-size: 18px;
   }
 
+  .btn-keyboard {
+    width: 25px;
+    height: 25px;
+  }
 
+  .keyboard-wrapper {
+    gap: 10px;
+    max-width: 400px;
+    flex-wrap: wrap;
+  }
+  .letter {
+    font-weight: 700;
+    font-size: 14px;
+  }
 }
