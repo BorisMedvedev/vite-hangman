@@ -88,8 +88,8 @@ body {
   display: inline-block;
   max-width: 200px;
   text-align: center;
-  margin: 30px auto;
-  padding: 5px 25px;
+  margin: 20px auto;
+  padding: 5px 20px;
   background-color: #60a5fa;
   border-radius: 4px;
   transition: background 0.5s;
@@ -110,14 +110,14 @@ body {
 .lives-text {
   margin: 0;
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 24px;
   color: rgb(255, 0, 0);
 }
 
 .hagman-image {
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
   max-width: 130px;
 }
 
@@ -137,22 +137,27 @@ body {
   }
 
   .btn-keyboard {
-    width: 40px;
-    height: 40px;
+    width: 45px;
+    height: 45px;
   }
 
   .keyboard-wrapper {
     padding: 0;
-    gap: 5px;
+    gap: 7px;
     width: 100%;
     flex-wrap: wrap;
   }
   .letter {
-    font-weight: 700;
-    font-size: 16px;
+    font-weight: 600;
+    font-size: 14px;
   }
 
   .hagman-image {
-    max-width: 80px;
+    max-width: 70px;
+  }
+
+  .stop-title {
+    font-size: 20px;
+    font-weight: 600;
   }
 }
