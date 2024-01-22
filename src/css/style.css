@@ -134,21 +134,25 @@ body {
 
 @media (max-width: 440px) {
   .logo {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .btn-keyboard {
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
   }
 
   .keyboard-wrapper {
-    gap: 10px;
+    gap: 5px;
     width: 100%;
     flex-wrap: wrap;
   }
   .letter {
     font-weight: 700;
     font-size: 18px;
+  }
+
+  .hagman-image {
+    max-width: 100px;
   }
 }
