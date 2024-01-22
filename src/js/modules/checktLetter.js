@@ -5,7 +5,7 @@ export const checktLetter = (letter) => {
   const world = sessionStorage.getItem('world');
   const inputLetter = letter.toLowerCase();
   const triesCounter = document.querySelector('.counter');
-  const hagmanImg = document.getElementById('hagmanImg');
+  const hagmanImg = document.getElementById('hagmanimages');
   if (!world.includes(inputLetter)) {
     triesCounter.textContent--;
     hagmanImg.src = `img/hg-${10 - +triesCounter.textContent}.png`;
@@ -17,7 +17,8 @@ export const checktLetter = (letter) => {
     worldArr.forEach((element, i) => {
       if (element === inputLetter) {
         letterCount++;
-        if (letterCount === world.length) {
+        console.log(element);
+        if (+letterCount === world.length) {
           stopGame('win');
           return;
         }

@@ -3,7 +3,7 @@ export const createImg = () => {
   image.classList.add('hagman-image');
   image.src = 'img/hg-0.png';
   image.alt = 'hagman image';
-  image.id = 'hagmanImg';
+  image.id = 'hagmanimages';
   return image;
 };
 
