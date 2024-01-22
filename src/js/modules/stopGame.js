@@ -18,7 +18,7 @@ export const stopGame = (statusgame) => {
         .innerHTML += `<h2 class='stop-title'>Вы проиграли :(</h2>`;
     document.getElementById('game')
         .innerHTML += `<h2 class='stop-title'>Загаданное Слово:
-         [${world}]</h2>`;
+         [ ${world} ]</h2>`;
     document.querySelector('.cancel-btn').remove();
   } else if (statusgame === 'quit') {
     document.querySelector('.hagman-image').remove();
