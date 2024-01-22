@@ -60,9 +60,8 @@ body {
 }
 
 .wrapper {
-  padding: 20px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 650px;
 }
 
@@ -119,7 +118,7 @@ body {
 .hagman-image {
   margin: 0 auto;
   margin-bottom: 25px;
-  max-width: 150px;
+  max-width: 130px;
 }
 
 .logo-min {
@@ -150,10 +149,10 @@ body {
   }
   .letter {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .hagman-image {
-    max-width: 100px;
+    max-width: 80px;
   }
 }
