@@ -144,7 +144,7 @@ body {
 
   .keyboard-wrapper {
     gap: 10px;
-    max-width: 450px;
+    width: 100%;
     flex-wrap: wrap;
   }
   .letter {
