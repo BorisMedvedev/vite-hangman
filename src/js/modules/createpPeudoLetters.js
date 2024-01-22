@@ -10,7 +10,7 @@ export const createPseudoLetters = (world) => {
     wrapper.append(p);
     wrapper.classList.add('wrapper');
   }
-  lives.innerHTML = `Попыток: <span class='counter'>${world.length}</span>`;
+  lives.innerHTML = `Попыток: <span class='counter'>10</span>`;
   return {
     wrapper,
     lives,

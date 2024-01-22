@@ -60,12 +60,9 @@ body {
 }
 
 .wrapper {
-  padding: 20px;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 650px;
-  border: 1px solid #60a5fa;
-  border-radius: 4px;
 }
 
 .keyboard-wrapper {
@@ -121,7 +118,7 @@ body {
 .hagman-image {
   margin: 0 auto;
   margin-bottom: 25px;
-  max-width: 150px;
+  max-width: 130px;
 }
 
 .logo-min {
@@ -136,21 +133,26 @@ body {
 
 @media (max-width: 440px) {
   .logo {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .btn-keyboard {
-    width: 25px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
   }
 
   .keyboard-wrapper {
-    gap: 10px;
-    max-width: 400px;
+    padding: 0;
+    gap: 5px;
+    width: 100%;
     flex-wrap: wrap;
   }
   .letter {
     font-weight: 700;
-    font-size: 14px;
+    font-size: 16px;
+  }
+
+  .hagman-image {
+    max-width: 80px;
   }
 }
