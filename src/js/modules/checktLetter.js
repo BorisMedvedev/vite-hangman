@@ -8,7 +8,7 @@ export const checktLetter = (letter) => {
   const hagmanImg = document.getElementById('hagmanImg');
   if (!world.includes(inputLetter)) {
     triesCounter.textContent--;
-    hagmanImg.src = `/images/hg-${10 - +triesCounter.textContent}.png`;
+    hagmanImg.src = `/img/hg-${10 - +triesCounter.textContent}.png`;
     if (+triesCounter.textContent === 0) {
       stopGame('lose');
     }
