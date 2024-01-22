@@ -10,9 +10,10 @@ export const stopGame = (statusgame) => {
   document.querySelector('.lives-text').remove();
 
   if (statusgame === 'win') {
-    document.querySelector('.hagman-image').src = '/images/hg-win.png';
+    document.querySelector('.hagman-image').src = 'img/hg-win.png';
     document.getElementById('game')
         .innerHTML += `<h2 class='stop-title'>Вы выйграли :)</h2>`;
+    document.querySelector('.cancel-btn').remove();
   } else if (statusgame === 'lose') {
     document.getElementById('game')
         .innerHTML += `<h2 class='stop-title'>Вы проиграли :(</h2>`;
